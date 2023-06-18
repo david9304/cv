@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgba(242, 244, 247, .9);
+}
+
+/* TWO SECTIONS */
+
+.leftside{
+    width: 30%;
+    height: 100%;
+    background-color: rgb(107, 107, 105);
+    position: absolute;
+}
+
+.rightside{
+    width: 65%;
+    position: relative;
+    float: right;
+}
+
+/* CONTENT LEFT SIDE */
+
+.leftside{
+    font-size: 0.9rem;
+    color: rgba(242, 244, 247, .9);
+}
+
+.wrapper{
+    display: grid;
+    place-items: center;
+    margin: 8rem;
+}
+
+img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+}
+.personal{
+    margin: 1.5rem;
+    font-size: large;
+}
+.personal::after{
+    display: block;
+    content: "";
+    background-color: whitesmoke;
+    height: 1px;
+}
+.personaldata{
+    margin: 1.5rem; 
+}
+
+.personaldata .data{
+    margin-top: 0.625rem;
+}
+
+/* CONTENT RIGHT SIDE */
+
+.rightside{
+    margin: 1rem;
+}
+.namewrapper{
+    font-size: 2rem;
+}
+.namewrapper::after, 
+.title::after{
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: gray;
+    opacity: 0.6;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.title{
+    margin-top: 1rem;
+}
+.workplace{
+    display: table-cell;
+    padding-top: 0.8rem;
+}
+.date{
+    display: table-cell;
+    padding-left: 10rem;
+}
+.date1{
+    display: table-cell;
+    padding-left: 16.4rem;
+}
+.studyexp1{
+    margin-bottom: 1rem;
+}
+small{
+    font-size: small;
+}
+ul li{
+    list-style-type: none;
+    line-height: 1.5rem;
+}
+
+/*PHONE DISPLAY */
+
+@media (max-width: 540px){
+    .leftside{
+        width: 100%;
+        position: relative;
+    }
+    .rightside{
+        width: 90%;
+        position: relative;
+    }
+    img{
+        width: 10rem;
+        height: 10rem;
+        position:absolute;
+    }
+}
+@media (max-width: 415px){
+    .leftside{
+        width: 29rem;
+        position: relative;
+        display: inline-block;
+    }
+    img{
+        height: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .rightside{
+        float: none;
+        width: 27rem;
+        position: relative;
+        display: inline-block;
+    }
+    .wrapper{
+        margin: 1rem;
+    }
+    .date{
+        display: inline-block;
+        padding-left: 4rem;
+        position: relative;
+    }
+    .date1{
+        display: inline-block;
+        padding-left: 18.5rem;
+        position: relative
+    }
+    .workplace{
+        display: inline-block;
+    }
+}
+
+
+
+
+
